@@ -7,7 +7,7 @@ RUN apk add --update --no-cache \
         unzip wget
 
 ARG STANFORD_CORENLP_VERSION="4.2.0"
-ARG MODELS="English"
+ARG MODELS="English,French,German,Spanish"
 
 RUN wget http://nlp.stanford.edu/software/stanford-corenlp-${STANFORD_CORENLP_VERSION}.zip && \
     unzip stanford-corenlp-${STANFORD_CORENLP_VERSION}.zip && \
